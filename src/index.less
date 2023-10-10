@@ -7,6 +7,25 @@ body {
   height: 100vh;
   font-size: 16px;
   padding: 2em;
+  min-width: 20em;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  body {
+    font-size: 10px;
+  }
 }
 
 canvas {
@@ -17,11 +36,23 @@ canvas {
 }
 
 .container {
-  width: 36em;
+  max-width: 36em;
   margin: 0 auto;
   border-radius: 1em;
   background-color: rgb(255 255 255 / 75%);
   padding: 2em 3em;
+}
+
+@media (max-width: 550px) {
+  .container {
+    max-width: 32em;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 28em;
+  }
 }
 
 .title {
